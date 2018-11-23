@@ -81,7 +81,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="stack.h" />
+    <ClInclude Include="Claster.h" />
+    <ClInclude Include="program.h" />
+    <ClInclude Include="queue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Claster.cpp" />
+    <ClCompile Include="Sample.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
