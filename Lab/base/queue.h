@@ -21,20 +21,20 @@ public:
 	TProgram Pop()
 	{
 		if (IsEmpty())
-			throw;
+			throw 123;
 		count--;
 		return mem[(begin++) % MaxMemSize];
 	}
 	TProgram FirstEl()
 	{
 		if (IsEmpty())
-			throw;
+			throw 123;
 		return mem[begin % MaxMemSize];
 	}
 	void Put(TProgram &v)
 	{
 		if (IsFull())
-			throw;
+			throw 123;
 		count++;
 		mem[end] = v;
 		end = (end + 1) % MaxMemSize;
