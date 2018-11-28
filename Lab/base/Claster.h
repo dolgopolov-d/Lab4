@@ -13,12 +13,12 @@ class TClaster
 	int run_count = 0;                           //| Вспомогательные переменные для запущенных программ       
 	TProgram running[MaxProgramsRunnig];         //|
 	bool is_running[MaxProgramsRunnig];          //|
-	int run_beginnig_tact[MaxProgramsRunnig];    //|
+	int run_beginig_tact[MaxProgramsRunnig];     //|
 	TQueue q;
 	double free_cores;
 	double core_count;
 	int tacts;
-	int freaquency;
+	int frequency;
 	int running_now = 0;
 	int all_progs = 0;                           //|Кол-во всех программ
 	int rejected_progs = 0;                      //|Кол-во отказов от выполнения
@@ -27,7 +27,7 @@ class TClaster
 public:
 	TClaster(double node = 2, double processor = 2, double core = 2, int _tacts = 0, int _freaquency = 50)
 	{
-		freaquency = _freaquency;
+		frequency = _freaquency;
 		tacts = _tacts;
 		core_count = node * processor * core;
 		free_cores = core_count;

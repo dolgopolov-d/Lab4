@@ -7,7 +7,7 @@ bool TClaster::ProgAppear()
 	srand(time(0) + f);
 	f += 10;
 	r = rand() % 100;
-	if (r < freaquency)
+	if (r < frequency)
 		return true;
 	else
 		return false;
@@ -20,7 +20,7 @@ void TClaster::DoTact()
 		for (int i = 0; i < MaxProgramsRunnig; i++)
 		{
 			if (is_running[i] == true)
-				if (temp - run_beginnig_tact[i] == running[i].GetCores())
+				if (temp - run_beginig_tact[i] == running[i].GetCores())
 				{
 					is_running[i] = false;
 					free_cores += running[i].GetCores();
@@ -59,7 +59,7 @@ void TClaster::DoTact()
 				TProgram tmp = q.Pop();
 				running[run_count] = tmp;
 				is_running[run_count] = true;
-				run_beginnig_tact[run_count] = temp;
+				run_beginig_tact[run_count] = temp;
 				run_count++;
 				running_now++;
 				free_cores = free_cores - tmp.GetCores();
