@@ -15,8 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stack.h">
+    <ClInclude Include="queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Claster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Claster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
